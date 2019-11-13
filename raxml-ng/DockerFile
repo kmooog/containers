@@ -5,9 +5,6 @@
 # base image: Ubuntu
 FROM ubuntu:16.04
 
-# File Author / Maintainer
-MAINTAINER Frederic Lemoine <frederic.lemoine@pasteur.fr>
-
 RUN apt-get update --fix-missing \
     && apt-get install -y git flex bison libgmp3-dev cmake make g++ \
     && cd /usr/local/ \
